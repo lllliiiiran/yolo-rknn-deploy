@@ -44,7 +44,7 @@ make -j4
   --model /path/to/best.rknn \
   --source /path/to/images \
   --out results
-sudo ./build/yolo_rknn   --model /home/liran/projects/baby-sleep-yolo/model/yolo11n-obb_gray_515.rknn   --source /home/liran/projects/baby-sleep-yolo/data/img   --out /home/liran/projects/baby-sleep-yolo/runs/obb_test/vis --visualize
+sudo ./build/yolo_rknn   --model /home/liran/projects/baby-sleep-yolo/model/best_nano_524.rknn   --source /home/liran/projects/baby-sleep-yolo/data/img   --out /home/liran/projects/baby-sleep-yolo/runs/obb_test/vis --visualize --p2-conf 0.60 --p3-conf 0.30 --p4-conf 0.25 -p5-conf 0.20 --nms-iou 0.25
 # 自定义阈值 + 可视化
 ./build/yolo_rknn \
   --model best.rknn \
